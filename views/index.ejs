@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("./partials/header.ejs") %>
+<body>
+    <div class="container">
+        <%- include("./partials/nav.ejs") %>
+
+        <h1>All Blogs:</h1>
+        <div class="blogs">
+            <% Data.forEach(ele =>{ %>
+                <div class="blog">
+                    <h1 class="title"><%= ele.title %></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, provident amet? Velit ratione quasi nulla quas quod.</p>
+                </div>
+            <%}) %>
+
+
+
+            <div class="blog">
+                <h1 class="title">Mustafa</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, provident amet? Velit ratione quasi nulla quas quod.</p>
+            </div>
+            <div class="blog">
+                <h1 class="title">Mustafa</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, provident amet? Velit ratione quasi nulla quas quod.</p>
+            </div>
+            <div class="blog">
+                <h1 class="title">Mustafa</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, provident amet? Velit ratione quasi nulla quas quod.</p>
+            </div>
+            <div class="blog">
+                <h1 class="title">Mustafa</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, provident amet? Velit ratione quasi nulla quas quod.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

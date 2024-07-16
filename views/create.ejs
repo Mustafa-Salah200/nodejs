@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("./partials/header.ejs") %>
+<body>
+    <div class="container">
+        <%- include("./partials/nav.ejs") %>
+        <form action="/create" method="post">
+            <div class="title">
+                <h1>CREATE NEW BLOG</h1>
+
+            </div>
+
+            <div class="input">
+                <label for="title">Title</label>
+                <input name="title" id="title" type="text">
+            </div>
+            <div class="input">
+                <label for="dies">Discription</label>
+                <input id="dies" name="discription" type="text">
+            </div>
+
+            <button type="submit">CREATE</button>
+        </form>
+    </div>
+</body>
+</html>
